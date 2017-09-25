@@ -1,0 +1,50 @@
+.news-card {
+  height: 300px;
+  border-style: solid;
+  border-color: red;
+  /* display: inherit; */
+  /* margin-top: 10px; */
+}
+
+/* .news-card-container {
+  height: 100%;
+  width: 100%;
+  border-style: solid;
+  border-color: green;
+  margin-bottom:20px;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+} */
+
+.news-card-left-part {
+  width: 30%;
+  /* height: 100%; */
+
+  border-style: solid;
+  border-color: yellow;
+  display: flex;
+
+  flex-direction: column;
+}
+
+.news-card-right-part {
+  width: 60%;
+  height: 100%;
+
+  border-style: solid;
+  border-color: blue;
+
+  display: flex;
+  flex-direction: column;
+
+  text-align: justify;
+}
+
+.images {
+  width: 100%;
+}
+
+h3 {
+  text-align: center;
+}

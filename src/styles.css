@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files
+/* @import "~@angular/material/prebuilt-themes/pink-bluegrey.css"; */
+
+#app-root {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
