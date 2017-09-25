@@ -1,10 +1,36 @@
-.news-card {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .news-card {
   height: 300px;
   border-style: solid;
   border-color: red;
-  /* display: inherit; */
-  /* margin-top: 10px; */
-}
+} */
+/* display: inherit;
+margin-top: 10px; */
 
 /* .news-card-container {
   height: 100%;
@@ -17,9 +43,9 @@
   justify-content: space-between;
 } */
 
-.news-card-left-part {
+/* height: 100%; */
+/* .news-card-left-part {
   width: 30%;
-  /* height: 100%; */
 
   border-style: solid;
   border-color: yellow;
@@ -39,12 +65,4 @@
   flex-direction: column;
 
   text-align: justify;
-}
-
-.images {
-  width: 100%;
-}
-
-h3 {
-  text-align: center;
-}
+} */
