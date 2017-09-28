@@ -3,7 +3,7 @@
   <div class="news-card-left-bar">
     <img class="images" src="{{item.img}}">
     <div class="news-card-left-bar-tags">
-        <a md-raised-button routerLink="." *ngFor="let tags of item.tags">{{tags}}</a>
+        <a md-button routerLink="." class="news-card-left-bar-tags-item" *ngFor="let tags of item.tags">{{tags}}</a>
     </div>
   </div>
   <div class="news-card-right-bar">

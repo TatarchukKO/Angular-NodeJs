@@ -4,13 +4,14 @@
 }
 
 .rb, .lb {
-  border-style:solid;
+  /* border-style:solid; */
   width: 20%;
 }
 
 .nb {
-  border-style: solid;
+  /* border-style: solid; */
   width: 40%;
+
 }
 
 .tab-wrapper {
@@ -20,3 +21,25 @@
   justify-content: space-around;
 }
 
+@media only screen and (orientation: portrait) {
+  .tab-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .nb, .rb, .lb {
+    width: 90%;
+  }
+  .lb {
+    order: 0;
+    margin-bottom: 10px;
+  }
+  .rb {
+    order: 1;
+    margin-bottom: 10px;
+  }
+  .nb {
+    order: 2;
+  }
+}

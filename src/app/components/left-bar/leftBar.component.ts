@@ -8,10 +8,6 @@ import { Component } from '@angular/core';
 export class LeftBarComponent {
   list = [
     {
-      icon: 'Print',
-      text: 'Print',
-    },
-    {
       icon: 'http',
       text: 'http',
     },
