@@ -5,6 +5,7 @@
 
 #app-root {
   width: 100%;
+  min-width: 360px;
   display: flex;
   flex-direction: column;
   background-color: #f7f7f7;

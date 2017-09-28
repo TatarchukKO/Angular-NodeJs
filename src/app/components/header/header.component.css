@@ -7,7 +7,7 @@
 }
 
 .header-logo-container {
-  margin-left: 8%;
+  margin-left: 100px;
   width: 20%;
   height: 120px;
 }
@@ -18,10 +18,31 @@
 
 .header-search-bar {
   width: 40%;
-  margin-left: 2%;
+  margin-left: calc(50% - 20% - 100px - 20%);
 }
 
 .profile-button {
   margin: 0 0 0 23.5%;
 }
 
+@media screen and (max-width: 800px) {
+.header {
+  justify-content: space-around;
+  align-items: center;
+}
+.header-logo-container {
+  margin: 0 0 0 20px;
+  margin: auto;
+  order:1;
+}
+.header-search-bar {
+  width: 80%;
+  /* margin: 0 0 0 10%; */
+  margin: auto;
+  order: 3;
+}
+.profile-button {
+  margin:0 20px 0 0;
+  order: 2;
+}
+}

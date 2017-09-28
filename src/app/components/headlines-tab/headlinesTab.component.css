@@ -6,12 +6,13 @@
 .rb, .lb {
   /* border-style:solid; */
   width: 20%;
+  min-width: 200px;
 }
 
 .nb {
   /* border-style: solid; */
   width: 40%;
-
+  min-width: 400 px;
 }
 
 .tab-wrapper {
