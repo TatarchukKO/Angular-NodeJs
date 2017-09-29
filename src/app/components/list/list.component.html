@@ -2,28 +2,17 @@
 
   <ng-container *ngIf="isLeftBar">
     <md-list-item *ngFor='let item of list'>
-      <md-icon mdListIcon>{{item.icon}}</md-icon>
-      <h3 mdLine>{{item.text}}</h3>
-    </md-list-item>
-  </ng-container>
-
-  <ng-container *ngIf="isNewsBar">
-    <md-list-item class="news-card" *ngFor='let item of list'>
-      <div class="news-card-left-part">
-        <img class="images" src="{{item.img}}">
-      </div>
-      <div class="news-card-right-part">
-        <h3>{{item.title}}</h3>
-        <p>{{item.content.substr(0, 500)}}</p>
+      <div class="left-bar-item">
+        <md-icon md-list-icon class="left-bar-item-icon">{{item.icon}}</md-icon>
+        <h4 mdLine>{{item.text}}</h4>
       </div>
     </md-list-item>
   </ng-container>
 
   <ng-container *ngIf="isRightBar">
     <md-list-item *ngFor='let item of list'>
-      <h3 mdLine>{{item.text}}</h3>
+      <a href="..." class="right-bar-item">{{item.text}}</a>
     </md-list-item>
   </ng-container>
-
 
 </md-list>

@@ -1,7 +1,8 @@
-import { BrowserModule }                                              from '@angular/platform-browser';
-import { NgModule }                                                   from '@angular/core';
-import { MdButtonModule, MdListModule, MdIconModule, MdTabsModule, MdCardModule }   from '@angular/material';
-import { BrowserAnimationsModule }                                    from '@angular/platform-browser/animations';
+import { BrowserModule }                                                            from '@angular/platform-browser';
+import { NgModule }                                                                 from '@angular/core';
+import { HttpModule }                                                               from '@angular/http';
+import { MdButtonModule, MdListModule, MdIconModule, MdTabsModule, MdCardModule, MdInputModule }   from '@angular/material';
+import { BrowserAnimationsModule }                                                  from '@angular/platform-browser/animations';
 
 import { AppComponent }                   from './app.component';
 import { HeaderComponent }                from './components/header/header.component';
@@ -10,7 +11,7 @@ import { LeftBarComponent }               from './components/left-bar/leftBar.co
 import { RightBarComponent }              from './components/right-bar/rightBar.component';
 import { ListComponent }                  from './components/list/list.component';
 import { NewsBarComponent }               from './components/news-bar/newsBar.component';
-import { NewsCardComponent }              from './components/news-card/newsCard.component';
+import { SearchBarComponent }             from './components/search-bar/searchBar.component';
 
 
 @NgModule({
@@ -22,7 +23,7 @@ import { NewsCardComponent }              from './components/news-card/newsCard.
     ListComponent,
     HeadlinesTabComponent,
     NewsBarComponent,
-    NewsCardComponent
+    SearchBarComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +31,9 @@ import { NewsCardComponent }              from './components/news-card/newsCard.
     BrowserAnimationsModule,
     MdListModule,
     MdIconModule,
-    MdTabsModule
+    MdTabsModule,
+    MdInputModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

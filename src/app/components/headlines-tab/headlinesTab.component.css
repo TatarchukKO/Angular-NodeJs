@@ -1,18 +1,46 @@
+/deep/.mat-tab-labels {
+  display: flex;
+  justify-content: center !important;
+}
+
 .rb, .lb {
-  border-style:solid;
+  /* border-style:solid; */
   width: 20%;
+  min-width: 200px;
 }
 
 .nb {
-  border-style: solid;
+  /* border-style: solid; */
   width: 40%;
+  min-width: 400 px;
 }
 
-.headlines-wrapper {
+.tab-wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-
+@media only screen and (orientation: portrait) {
+  .tab-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .nb, .rb, .lb {
+    width: 90%;
+  }
+  .lb {
+    order: 0;
+    margin-bottom: 10px;
+  }
+  .rb {
+    order: 1;
+    margin-bottom: 10px;
+  }
+  .nb {
+    order: 2;
+  }
+}
